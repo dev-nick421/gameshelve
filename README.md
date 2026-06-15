@@ -40,7 +40,12 @@ Self-hosting your game collection shouldn't require a wiki. GameShelve is built 
 - 📡 **Live progress** — scan and compression progress streams to your browser in real time.
 - 🔒 **Comprehensive Auditing** — whatever you, the system or the scheduler does, theres a Logs page under settings that never leaves you lost
 
-<!-- todo: could add some screenshots here -->
+## 🖼 Screenshots
+![Library](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_library.PNG?raw=true)
+![Detailview](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_detailview.PNG?raw=true)
+![Scanning](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_scanning.PNG?raw=true)
+![Game Management](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_game_management.PNG?raw=true)
+![Auditing](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_auditing.PNG?raw=true)
 
 ## 🚀 Get running in 2 minutes
 
