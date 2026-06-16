@@ -14,13 +14,13 @@ export const config = {
 
   // SQLite by default; the dialect is swappable for a future Postgres path.
   databasePath:
-    process.env.DATABASE_PATH ?? path.join(apiRoot, 'data', 'gameshelve.sqlite'),
+    process.env.DATABASE_PATH ?? path.join(apiRoot, 'data', 'gameledger.sqlite'),
 
   // Where hand-authored custom games (#42) keep their uploaded artwork. Lives
   // alongside the database so it shares the persisted data volume in Docker.
   customDir:
     process.env.CUSTOM_DIR ??
-    path.join(path.dirname(process.env.DATABASE_PATH ?? path.join(apiRoot, 'data', 'gameshelve.sqlite')), 'custom'),
+    path.join(path.dirname(process.env.DATABASE_PATH ?? path.join(apiRoot, 'data', 'gameledger.sqlite')), 'custom'),
 
   // IGDB credentials may be supplied via env as a fallback. The admin UI takes
   // precedence; these let a deployment preconfigure IGDB without the DB.

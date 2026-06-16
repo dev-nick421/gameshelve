@@ -34,7 +34,7 @@ function logout() {
         class="flex items-center gap-2 text-base font-bold tracking-tight"
       >
         <AppLogo />
-        <span class="hidden sm:inline bg-gradient-to-r from-[#e84bd0] to-[#9b5cf6] bg-clip-text text-transparent">GameShelve</span>
+        <span class="hidden sm:inline bg-gradient-to-r from-[#e84bd0] to-[#9b5cf6] bg-clip-text text-transparent">GameLedger</span>
       </RouterLink>
 
       <div class="flex items-center gap-1">

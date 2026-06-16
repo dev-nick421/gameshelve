@@ -6,7 +6,7 @@ import { config } from '../config.js';
 // without a session store. Phase 2 swaps this whole module for real accounts —
 // routes only depend on `requireAuth` and never reach inside it.
 
-const TOKEN_LABEL = 'gameshelve-admin-session';
+const TOKEN_LABEL = 'gameledger-admin-session';
 
 export function expectedToken() {
   return crypto

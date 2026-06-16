@@ -1,7 +1,7 @@
 {
-  "name": "gameshelve-api",
+  "name": "gameledger-api",
   "version": "1.0.0",
-  "description": "GameShelve API — self-hosted game library & distribution platform",
+  "description": "GameLedger API — self-hosted game library & distribution platform",
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "main": "src/index.js",

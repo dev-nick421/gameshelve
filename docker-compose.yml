@@ -10,12 +10,12 @@
 # Pin a specific release with IMAGE_TAG=v1.0.0 instead of the default `latest`.
 services:
   api:
-    image: ghcr.io/${IMAGE_OWNER:-dev-nick421}/gameshelve-api:${IMAGE_TAG:-latest}
+    image: ghcr.io/${IMAGE_OWNER:-dev-nick421}/gameledger-api:${IMAGE_TAG:-latest}
     environment:
       # REQUIRED in production —> app will refuse to start with a default value.
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD in .env}
       PORT: 3000
-      DATABASE_PATH: /app/data/gameshelve.sqlite
+      DATABASE_PATH: /app/data/gameledger.sqlite
       MATCH_THRESHOLD: ${MATCH_THRESHOLD:-0.6}
     volumes:
       - api-data:/app/data
@@ -24,7 +24,7 @@ services:
     restart: unless-stopped
 
   web:
-    image: ghcr.io/${IMAGE_OWNER:-dev-nick421}/gameshelve-web:${IMAGE_TAG:-latest}
+    image: ghcr.io/${IMAGE_OWNER:-dev-nick421}/gameledger-web:${IMAGE_TAG:-latest}
     ports:
       - '${WEB_PORT:-8080}:80'
     depends_on:

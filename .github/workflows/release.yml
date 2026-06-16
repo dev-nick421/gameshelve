@@ -21,9 +21,9 @@ jobs:
       matrix:
         include:
           - context: ./api
-            image: gameshelve-api
+            image: gameledger-api
           - context: ./web
-            image: gameshelve-web
+            image: gameledger-web
     steps:
       - uses: actions/checkout@v4
 
@@ -88,5 +88,5 @@ jobs:
             ```
 
             Prebuilt images for this release:
-            - `ghcr.io/${{ github.repository_owner }}/gameshelve-api:${{ github.ref_name }}`
-            - `ghcr.io/${{ github.repository_owner }}/gameshelve-web:${{ github.ref_name }}`
+            - `ghcr.io/${{ github.repository_owner }}/gameledger-api:${{ github.ref_name }}`
+            - `ghcr.io/${{ github.repository_owner }}/gameledger-web:${{ github.ref_name }}`

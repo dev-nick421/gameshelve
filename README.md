@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="660" alt="GameShelve — your game library, self-hosted">
+<img src="assets/banner.svg" width="660" alt="GameLedger — your game library, self-hosted">
 
 <p>
   <b>The dead-simple, self-hosted library and download portal for your game collection.</b><br>
@@ -9,7 +9,7 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-e84bd0.svg)](LICENSE)
 [![Release](https://img.shields.io/badge/release-v1.0.0-9b5cf6.svg)](../../releases)
-[![Docker images](https://img.shields.io/badge/images-ghcr.io-2496ED?logo=docker&logoColor=white)](../../pkgs/container/gameshelve-api)
+[![Docker images](https://img.shields.io/badge/images-ghcr.io-2496ED?logo=docker&logoColor=white)](../../pkgs/container/gameledger-api)
 [![Built with Vue](https://img.shields.io/badge/web-Vue_3-42b883?logo=vuedotjs&logoColor=white)](https://vuejs.org)
 [![Node](https://img.shields.io/badge/api-Node_22-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-e84bd0.svg)](#-contributing)
@@ -20,9 +20,9 @@
 
 ---
 
-## Why GameShelve?
+## Why GameLedger?
 
-Self-hosting your game collection shouldn't require a wiki. GameShelve is built to be **boring to run and delightful to use**:
+Self-hosting your game collection shouldn't require a wiki. GameLedger is built to be **boring to run and delightful to use**:
 
 - 🟢 **One file, one command.** A single `docker-compose.yml` and `docker compose up -d`. No database to provision, no message queue, no reverse-proxy gymnastics.
 - 📦 **Prebuilt images.** Pull ready-to-run `amd64`/`arm64` images straight from the registry — no build step, works on an Unraid box or a Raspberry Pi alike.
@@ -33,7 +33,7 @@ Self-hosting your game collection shouldn't require a wiki. GameShelve is built 
 
 ## ✨ Features
 
-- 🔍 **Automatic scanning & matching** — drop game folders in, GameShelve finds them and matches metadata via IGDB.
+- 🔍 **Automatic scanning & matching** — drop game folders in, GameLedger finds them and matches metadata via IGDB.
 - 🖼️ **A real library** — covers, hero backgrounds, screenshots and accent-coloured detail pages, plus home-page shelves (Recently Added, Most Downloaded, Newest Releases) you can reorder and toggle.
 - ✍️ **Custom games** — got something IGDB doesn't know? Pick the folder, add your own art and details, and it's catalogued just like everything else.
 - ⬇️ **One-click downloads** — resumable, with friendly filenames and per-game download counts.
@@ -41,11 +41,11 @@ Self-hosting your game collection shouldn't require a wiki. GameShelve is built 
 - 🔒 **Comprehensive Auditing** — whatever you, the system or the scheduler does, theres a Logs page under settings that never leaves you lost
 
 ## 🖼 Screenshots
-![Library](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_library.PNG?raw=true)
-![Detailview](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_detailview.PNG?raw=true)
-![Scanning](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_scanning.PNG?raw=true)
-![Game Management](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_game_management.PNG?raw=true)
-![Auditing](https://github.com/dev-nick421/gameshelve/blob/main/assets/screenshot_auditing.PNG?raw=true)
+![Library](https://github.com/dev-nick421/gameledger/blob/main/assets/screenshot_library.PNG?raw=true)
+![Detailview](https://github.com/dev-nick421/gameledger/blob/main/assets/screenshot_detailview.PNG?raw=true)
+![Scanning](https://github.com/dev-nick421/gameledger/blob/main/assets/screenshot_scanning.PNG?raw=true)
+![Game Management](https://github.com/dev-nick421/gameledger/blob/main/assets/screenshot_game_management.PNG?raw=true)
+![Auditing](https://github.com/dev-nick421/gameledger/blob/main/assets/screenshot_auditing.PNG?raw=true)
 
 ## 🚀 Get running in 2 minutes
 
@@ -57,9 +57,9 @@ Self-hosting your game collection shouldn't require a wiki. GameShelve is built 
 #### 1. Grab the compose file and config
 
 ```bash
-mkdir gameshelve && cd gameshelve
-curl -O https://raw.githubusercontent.com/dev-nick421/gameshelve/main/docker-compose.yml
-curl -O https://raw.githubusercontent.com/dev-nick421/gameshelve/main/.env.example
+mkdir gameledger && cd gameledger
+curl -O https://raw.githubusercontent.com/dev-nick421/gameledger/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/dev-nick421/gameledger/main/.env.example
 cp .env.example .env
 ```
 
@@ -138,14 +138,14 @@ cd web && npm test    # Vue components + stores
 Build the images yourself:
 
 ```bash
-docker build -t gameshelve-api ./api
-docker build -t gameshelve-web ./web
+docker build -t gameledger-api ./api
+docker build -t gameledger-web ./web
 ```
 
 ## 📦 Releases
 
 Pushing a `vX.Y.Z` tag builds multi-arch (`amd64` + `arm64`) images, publishes
-them to `ghcr.io/<owner>/gameshelve-{api,web}`, and cuts a GitHub Release.
+them to `ghcr.io/<owner>/gameledger-{api,web}`, and cuts a GitHub Release.
 
 ```bash
 git tag v1.0.0
@@ -159,12 +159,12 @@ before opening a PR, and keep changes focused.
 
 ## ⚖️ Legal notice
 
-GameShelve is a tool for managing and self-hosting **your own, legitimately owned games**. It does not provide, host, or facilitate access to any copyrighted content.
+GameLedger is a tool for managing and self-hosting **your own, legitimately owned games**. It does not provide, host, or facilitate access to any copyrighted content.
 
-**GameShelve does not condone piracy.** Distributing or downloading games you do not own or have not licensed is illegal in most jurisdictions and a violation of the rights of developers and publishers. You are solely responsible for ensuring that the content you manage with this software complies with applicable copyright law and any relevant license agreements.
+**GameLedger does not condone piracy.** Distributing or downloading games you do not own or have not licensed is illegal in most jurisdictions and a violation of the rights of developers and publishers. You are solely responsible for ensuring that the content you manage with this software complies with applicable copyright law and any relevant license agreements.
 
 ## 📄 License
 
-GameShelve is free software under the
+GameLedger is free software under the
 **[GNU Affero General Public License v3.0 or later](LICENSE)**. If you run a
 modified version as a network service, you must offer your users its source.

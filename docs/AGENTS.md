@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Orientation for agents working on GameShelve. This consolidates the project's
+Orientation for agents working on GameLedger. This consolidates the project's
 design docs into the load-bearing facts and non-obvious decisions — the things a
 human absorbs by reading the whole history but an agent can easily miss. Nothing
 here is invented; it is distilled from the original client brief and the
@@ -10,7 +10,7 @@ per-change design notes.
 
 ## What this is
 
-GameShelve is a self-hosted game library & distribution platform — "Jellyfin for
+GameLedger is a self-hosted game library & distribution platform — "Jellyfin for
 games". It scans configured library directories, identifies games via IGDB,
 normalizes naming, compresses each game into a downloadable ZIP, and presents the
 collection through a media-centric Vue UI. Dark-first, premium feel comparable to

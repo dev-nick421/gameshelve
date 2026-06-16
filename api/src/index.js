@@ -5,7 +5,7 @@ import { config } from './config.js';
 import { buildServer } from './server.js';
 
 // Surface exactly which database file this process opened
-console.log(`GameShelve DB: ${path.resolve(config.databasePath)}`);
+console.log(`GameLedger DB: ${path.resolve(config.databasePath)}`);
 
 // Last-resort safety net. Express 4 does not forward errors thrown in async
 // route handlers to the error middleware, so a stray rejection would otherwise
@@ -52,5 +52,5 @@ scheduler.reschedule({
 
 server.listen(config.port, () => {
   // eslint-disable-next-line no-console
-  console.log(`GameShelve API listening on :${config.port}`);
+  console.log(`GameLedger API listening on :${config.port}`);
 });
