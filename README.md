@@ -24,9 +24,9 @@
 
 Self-hosting your game collection shouldn't require a wiki. GameLedger is built to be **boring to run and delightful to use**:
 
-- 🟢 **One file, one command.** A single `docker-compose.yml` and `docker compose up -d`. No database to provision, no message queue, no reverse-proxy gymnastics.
-- 📦 **Prebuilt images.** Pull ready-to-run `amd64`/`arm64` images straight from the registry — no build step, works on an Unraid box or a Raspberry Pi alike.
-- 🪄 **Sensible defaults.** It just works out of the box; the only thing you _must_ set is a password.
+- 🟢 **One file, one command.** A single `docker-compose.yml` and `docker compose up -d`
+- 📦 **Prebuilt images.** Pull ready-to-run `amd64`/`arm64` images straight from the registry, works in any docker environment (Unraid, RPi etc.)
+- 🪄 **Sensible defaults.** Just works out of the box the only thing you _must_ set is a password.
 - 🎨 **Enjoyable UI** Cover art, hero pages, screenshots and full IGDB integration, not just a file listing.
 
 > **New to self-hosting?** The [2-minute tutorial](#-get-running-in-2-minutes) below assumes nothing.
@@ -52,7 +52,7 @@ Self-hosting your game collection shouldn't require a wiki. GameLedger is built 
 #### Prerequisites
 
 - A machine with [Docker](https://docs.docker.com/get-docker/) and Docker Compose (Docker Desktop includes both).
-- A folder containing your games (a game is either a folder or a .zip file, just drop into your library folder)
+- A folder containing your games (a game is either a folder or a .zip file, just drop it into your library folder)
 
 #### 1. Grab the compose file and config
 
